@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>loginpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        function validations()
+        { if(localStorage) {
+            form = document.forms["loguser"];
+            var yname= form["dsername"].value;
+            var name = localStorage.getItem("xname");
+            var x    = localStorage.getItem("pname");
+            var y    = form["password"].value;
+            if (yname == name && x==y) {
+                return true;
+            } else{
+                alert("check login details");
+                return false;
+            }
+        }
+        }
+    </script>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body link="white">
+<div class="container">
+    <div class="row">
+        <div class="Absolute-Center is-Responsive">
+            <div id="logo-container"></div>
+            <div class="col-sm-12 col-md-10 col-md-offset-1">
+                <form action="" id="loginForm" onsubmit="validations()">
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input class="form-control" type="text" id="username" name='username' placeholder="username" value="" required/>
+                    </div>
+                    <div class="form-group input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input class="form-control" type="password" name='password' placeholder="password" value="" required/>
+                    </div>
+                    <div class="form-group text-center">
+                        Remember me <input type="checkbox">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-def btn-block" onclick="location.href='map.html';" required >Login</button>
+                    </div>
+                    <div class="form-group text-center">
+                        New User ? <a href="register.html" style="color: whitesmoke">Sign up now </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
