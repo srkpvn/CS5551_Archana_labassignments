@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/picture"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.archanareddy.exampleapplication.ApiActivity">
+    tools:showIn="@layout/activity_main">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/txt_uname"
+        android:hint="Username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/txt_Pwd"
+        android:hint="Password"
+        android:password="true"
+        android:layout_below="@+id/txt_uname"
+        android:layout_alignLeft="@+id/txt_uname"
+        android:layout_alignStart="@+id/txt_uname"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btn_login"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/txt_Pwd"
+        android:layout_marginTop="75dp"
+        android:onClick="checkCredentials"/>
+
+
+    <TextView
+        android:id="@+id/lbl_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="false"
+        android:text="Welcome to AR'S App"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0F0908" />
+
+    <TextView
+        android:id="@+id/lbl_Error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:singleLine="false"
+        android:text="Please enter valid username and password"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#aa3344"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lbl_Error"
+        android:layout_alignStart="@+id/btn_login"
+        android:layout_alignLeft="@id/btn_login"
+        android:background="@color/colorPrimary"
+        android:onClick="register"
+        android:text="Register" />
+
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        (...)
+
+        (...)</LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lbl_Error"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
