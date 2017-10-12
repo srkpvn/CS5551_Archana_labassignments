@@ -4,3 +4,7 @@ Assignment-1-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki
 Assignment-2-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki/Lab-2 <br>
 Assignment-3-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki/Lab-3 <br>
 Assignment-4-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki/Lab-4 <br>
+Assignment-5-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki/lab-5 <br>
+Assignment-6-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki/lab-6 <br>
+Assignment-7-https://github.com/ArchanaBasani/CS5551_Archana_labassignments/wiki/lab-7 <br>
+
